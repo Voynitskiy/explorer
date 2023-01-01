@@ -80,13 +80,13 @@ export default {
   },
   data() {
     return {
-      erc20: '0x88BFec573Dd3E4b7d2E6BfD4D0D6B11F843F8aa1',
-      selectedAddress: 'cosmos1ev0vtddkl7jlwfawlk06yzncapw2x9quyxx75u',
+      erc20: '0x1f70a6D6F92F61ead83c5a08D3DAb3523EBdf82d',
+      selectedAddress: 'cosmos1qsagnxelevekw4vlqe6n62mjaw0rggw0m32tj4',
     }
   },
   computed: {
     chains() {
-      const { data } = addressDecode('cosmos1ev0vtddkl7jlwfawlk06yzncapw2x9quyxx75u')
+      const { data } = addressDecode('cosmos1qsagnxelevekw4vlqe6n62mjaw0rggw0m32tj4')
       const config = Object.values(JSON.parse(localStorage.getItem('chains')))
         .map(x => ({
           chain: x.chain_name,
